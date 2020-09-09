@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        #main {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="about-section">
+        <h1>About Us Page</h1>
+        <p>Hello ! This is Ajeet singh thakur [MERN.js] Developer </p>
+        <p>MERN Stack comprises of 4 technologies namely: MongoDB, Express, React and Node. js. Now i am working on
+            projects front-end to back-end sites like amazone, youtube</p>
+    </div>
+    <div style="align-items:center">
+        <h2 style="text-align:center">MY Profile</h2>
+        <div id='main' class="row">
+            <div class="column">
+                <div class="card">
+                    <div style="text-align:center" class="container">
+                        <h2>Ajeet singh Thakur</h2>
+                        <p class="title">MERN.js Developer</p>
+                        <p>uild frontend to the backend to learn how the whole site works.<a href="https:
+                            //campkart.herokuapp.com/">Visit Campkart .com</a>
+                            connect node.js with MongoDB to fetch data through API. send and save all data on MongoDB
+                            server
+                            only the admin can create a product if a new product comes. and also this postmaster clone
+                            of
+                            postman </p>
+                        <p>
+                            <a href="https: //github.com/ajeetsingh">Visit github page</a>
+                        </p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+</body>
+
+</html>
